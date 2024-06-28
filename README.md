@@ -13,3 +13,5 @@ Seven [datasets](./datasets) are used:
 - <strong> teams.csv </strong>: Team ID and team name
 - <strong> teamstats.csv </strong>: Overall team stats in each game
  
+## Results
+The result of the analysis can be found [here](./football.md)

@@ -1,6 +1,5 @@
 USE football;
 
-
 -- TOP 10 TEAMS WITH MOST TOTAL GOALS FROM 2014-2020
 SELECT ts.team_id, ANY_VALUE(t.name) AS team_name, SUM(goals) AS total_goal
 FROM team_stats ts
@@ -8,9 +7,6 @@ JOIN teams t ON t.team_id = ts.team_id
 GROUP BY team_id
 ORDER BY total_goal DESC
 LIMIT 10;
-
-
-
 
 -- PLAYER WITH THE MOST GOAL IN ONE MATCH
 -- Make temporary table to store game id and each respective home and away team
